@@ -1,0 +1,53 @@
+.main_DetailsUser
+    position: relative
+    display: grid
+    grid-auto-flow: column
+    grid-auto-columns: max-content
+    justify-content: right
+    grid-column-gap: 5px
+    font-size: 18px
+    color: #B3B3B3
+    height: 50px
+    padding-right: 30px
+    width: auto
+    .contOptionUserInfo
+        display: grid
+        grid-template-columns: max-content max-content
+        grid-column-gap: 10px
+        z-index: 2
+        background: #fff
+        width: auto
+        align-items: center
+        justify-content: center
+        padding: 0 10px
+        border: 1px solid
+        border-radius: 20px
+        position: relative
+        .cntPrf
+            display: flex
+            align-items: center
+            column-gap: 10px
+            cursor: pointer
+        &:hover
+            // cursor: pointer
+            .Userprofile
+                background-color: rgb(240, 169, 46)
+                width: 35px
+                height: 35px
+                border-radius: 50%
+            .nameDUser
+                text-transform: uppercase
+                font-size: 16px
+                color: #000
+                white-space: nowrap
+                text-overflow: ellipsis
+                overflow: hidden
+                width: 130px
+            i
+                cursor: pointer
+                &:first-child
+                    margin-right: 8px  
+
+@media screen and ( max-width: 475px )
+    .main_DetailsUser
+        visibility: hidden

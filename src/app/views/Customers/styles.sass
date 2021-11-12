@@ -1,0 +1,75 @@
+.customer_view_container
+    .customer_head
+        display: flex
+        margin-top: 15px
+        margin-bottom: 15px
+        justify-content: flex-end
+        button
+            background-color: #719ECE
+            color: white
+            display: flex
+            align-items: center
+            align-self: center
+            padding: 10px
+            border: none
+            border-radius: 15px
+            margin-left: 10px
+            &:hover
+                opacity: 0.8
+            img
+                margin-right: 8px
+    .table_container
+        overflow-x: scroll
+        #tableCustomer
+            border-collapse: collapse
+            width: 100%
+            thead
+                padding-top: 12px
+                padding-bottom: 12px
+                text-align: left
+                background-color: #719ECE
+                color: white
+                tr
+                    &:nth-child(even)
+                        background-color: #f2f2f2
+                    th
+                        border: 1px solid #ddd
+                        padding: 8px
+            tbody
+                tr
+                    &:nth-child(even)
+                        background-color: #f2f2f2
+                    td
+                        border: 1px solid #ddd
+                        padding: 8px
+                        span
+                            overflow-wrap: anywhere
+                            &:last-child
+                                display: flex
+                                align-items: center
+                                justify-content: center
+                                column-gap: 13px
+                            img
+                                padding: 10px
+                                background: #F5F5F5
+                                border-radius: 5px
+                                cursor: pointer
+                                &:first-child
+                                    border: 1px solid green
+                                    &:hover
+                                        background: #e8ffe1
+                                &:last-child
+                                    border: 1px solid red
+                                    &:hover
+                                        background: #ffe1e1
+                    .container_loader
+                        border: 1px solid #ddd
+                        padding: 8px
+                        text-align: center
+                        height: 200px
+
+@media screen and ( max-width: 320px )
+    #tableCustomer
+        display: block
+        overflow-x: auto
+    
